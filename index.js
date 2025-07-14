@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://chatapp-backend-production-7a54.up.railway.app',
     credentials: true,
     methods: ['GET', 'POST', 'OPTIONS', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
