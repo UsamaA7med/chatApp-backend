@@ -9,16 +9,11 @@ import { app, server } from './config/socket.io.js'
 
 dotenv.config()
 
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://chat-app-frontend-six-iota.vercel.app',
-]
-
 app.use(express.json())
 app.use(cookieParser())
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: 'https://chat-app-frontend-chi-two.vercel.app',
     credentials: true,
     methods: ['GET', 'POST', 'OPTIONS', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
